@@ -81,5 +81,21 @@ export const WETH = {
     'WBNB',
     'Wrapped BNB',
     'https://www.binance.org'
+  ),
+  [ChainId.POLYGON]: new Token(
+    ChainId.POLYGON,
+    '0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270',
+    18,
+    'WMATIC',
+    'Wrapped Matic',
+    'https://polygon.technology/'
+  ),
+  [ChainId.MUMBAI]: new Token(
+    ChainId.MUMBAI,
+    '0x9c3C9283D3e44854697Cd22D3Faa240Cfb032889',
+    18,
+    'WMATIC',
+    'Wrapped Matic',
+    'https://polygon.technology/'
   )
 }
