@@ -51,6 +51,8 @@ export class Pair {
       }
     }
 
+    console.log(PAIR_ADDRESS_CACHE[key])
+
 
     return PAIR_ADDRESS_CACHE[key]
   }
