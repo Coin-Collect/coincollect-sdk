@@ -30,8 +30,13 @@ export class Pair {
   private readonly tokenAmounts: [TokenAmount, TokenAmount]
 
   public static getAddress(tokenA: Token, tokenB: Token): string {
+
+    console.log("getAddress works")
     
     const [token0, token1] = tokenA.sortsBefore(tokenB) ? [tokenA, tokenB] : [tokenB, tokenA] // does safety checks
+
+    console.log(FACTORY_ADDRESS_MAP[token0.chainId])
+    console.log(INIT_CODE_HASH_MAP[token0.chainId])
 
     const key = composeKey(token0, token1)
 
@@ -45,6 +50,7 @@ export class Pair {
         )
       }
     }
+
 
     return PAIR_ADDRESS_CACHE[key]
   }
