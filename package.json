@@ -2,7 +2,7 @@
   "name": "@coincollect/sdk",
   "license": "MIT",
   "version": "2.4.3",
-  "description": "🛠 An SDK for building applications on top of Pancakeswap.",
+  "description": "🛠 An SDK for building applications on top of CoinCollect.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
@@ -10,8 +10,8 @@
   ],
   "repository": "https://github.com/coin-collect/coincollect-sdk.git",
   "keywords": [
-    "pancakeswap",
-    "bsc"
+    "coincollect",
+    "matic"
   ],
   "module": "dist/sdk.esm.js",
   "scripts": {
